@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOS BASTIDORES DE HYTALO SANTOS - Revelações Chocantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d32f2f;
+            --secondary: #212121;
+            --accent: #ffd700;
+            --light: #f5f5f5;
+            --dark: #1a1a1a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://cdn.dol.com.br/img/Artigo-Destaque/910000/1200x0/Capa-Site-18_00918774_0_-t.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F910000%2FCapa-Site-18_00918774_0_.jpg%3Fxid%3D3102940&xid=3102940') center/cover;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header-overlay {
+            background: rgba(0,0,0,0.7);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            color: var(--light);
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .price-box {
+            background: var(--primary);
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto;
+        }
+        
+        /* Revelations Section */
+        .revelations {
+            background-color: #141414;
+        }
+        
+        .revelation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .revelation-card {
+            background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--primary);
+        }
+        
+        .revelation-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .revelation-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .revelation-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        /* Author Section */
+        .author {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://s2-quem.glbimg.com/xbTqbSm4ZKAL21y1ud6RsFjQJXc=/0x0:1400x954/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2025/b/2/6SNeJcQ3akhv0DNGP81g/quem-4-.png') center/cover;
+            text-align: center;
+        }
+        
+        .author-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(33, 33, 33, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .author-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: #141414;
+        }
+        
+        .testimonial {
+            background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            border-left: 5px solid var(--accent);
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--accent);
+            opacity: 0.2;
+            font-family: serif;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--accent);
+            text-align: right;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            text-align: center;
+            background-color: #1a1a1a;
+        }
+        
+        .guarantee-box {
+            background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px dashed var(--accent);
+        }
+        
+        .guarantee-box i {
+            font-size: 5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid var(--primary);
+        }
+        
+        footer p {
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            
+            .price-box {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Hero Section -->
+    <header>
+        <div class="header-overlay">
+            <h1>NOS BASTIDORES DE HYTALO SANTOS</h1>
+            <div class="subtitle">A VERDADE QUE FELCA REVELOU</div>
+            <div class="tagline">Depoimentos chocantes de Pedro Ramos, ex-assessor de Hytalo Santos</div>
+            <div class="price-box">APENAS R$ 19,90</div>
+            <a href="#" class="btn" id="buy-button">COMPRAR AGORA!</a>
+            <p>⚠️ ATENÇÃO: Conteúdo explosivo que nunca foi revelado antes!</p>
+        </div>
+    </header>
+
+    <!-- Revelations Section -->
+    <section class="revelations">
+        <div class="container">
+            <h2 class="section-title">REVELAÇÕES CHOCANTES</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">O que você vai descobrir neste ebook exclusivo:</p>
+            
+            <div class="revelation-grid">
+                <div class="revelation-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>SEGREDOS OBSCUROS</h3>
+                    <p>A verdade por trás da imagem pública de Hytalo Santos que ninguém ousa contar</p>
+                </div>
+                
+                <div class="revelation-card">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>O LADO ESCURO DE FELCA</h3>
+                    <p>Revelações inéditas sobre o verdadeiro caráter de Felca e sua relação com Hytalo</p>
+                </div>
+                
+                <div class="revelation-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>CONFLITOS EXPLOSIVOS</h3>
+                    <p>Os bastidores das brigas e disputas que nunca chegaram ao público</p>
+                </div>
+                
+                <div class="revelation-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>NEGÓCIOS SECRETOS</h3>
+                    <p>Como o dinheiro realmente circula entre os influenciadores e quem se beneficia</p>
+                </div>
+                
+                <div class="revelation-card">
+                    <i class="fas fa-video"></i>
+                    <h3>MANIPULAÇÃO DE CONTEÚDO</h3>
+                    <p>Como as imagens públicas são cuidadosamente construídas para esconder a realidade</p>
+                </div>
+                
+                <div class="revelation-card">
+                    <i class="fas fa-ban"></i>
+                    <h3>O QUE FOI CENSURADO</h3>
+                    <p>As histórias que a equipe jurídica impediu que chegassem ao público</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="author">
+        <div class="container">
+            <h2 class="section-title">O AUTOR: PEDRO RAMOS</h2>
+            
+            <div class="author-content">
+                <p><span class="highlight">Pedro Ramos</span> trabalhou como assessor próximo de Hytalo Santos por mais de 2 anos, sendo testemunha ocular dos eventos mais controversos e guardados a sete chaves do mundo dos influenciadores.</p>
+                
+                <p>"<span class="highlight">Vi coisas que mudaram minha percepção para sempre</span>. A imagem pública é apenas uma fachada cuidadosamente construída. Neste ebook, decidi revelar a verdade nua e crua, sem filtros nem medo das consequências."</p>
+                
+                <p>"<span class="highlight">Minha consciência não me permite mais calar</span>. As pessoas merecem saber o que realmente acontece nos bastidores do mundo dos influencers que tanto admiram."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O QUE ESTÃO DIZENDO</h2>
+            
+            <div class="testimonial">
+                <p>"As revelações neste ebook são de explodir a cabeça! Não conseguia parar de ler. Pedro Ramos expõe uma realidade que nunca imaginaria existir por trás das câmeras."</p>
+                <div class="testimonial-author">- Ana P., Jornalista</div>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Comprei por curiosidade e fiquei chocado com o nível de detalhes e confissões. Cada capítulo é uma bomba diferente. Vale cada centavo!"</p>
+                <div class="testimonial-author">- Carlos M., Fã de longa data</div>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Finalmente alguém com coragem para contar a verdade! Este ebook deveria ser leitura obrigatória para todos que acompanham o mundo digital."</p>
+                <div class="testimonial-author">- Dr. Roberto T., Psicólogo</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <h2 class="section-title">GARANTIA INCONDICIONAL</h2>
+            
+            <div class="guarantee-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>SATISFAÇÃO GARANTIDA OU SEU DINHEIRO DE VOLTA!</h3>
+                <p>Adquirindo hoje, você tem 7 dias para ler o ebook completo. Se por qualquer motivo não ficar completamente satisfeito com as revelações bombásticas, devolvemos 100% do seu dinheiro, sem perguntas!</p>
+                <p style="font-weight: bold; margin-top: 20px;">É risco zero para você!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="background: linear-gradient(to right, var(--primary), var(--secondary)); text-align: center; padding: 60px 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px;">NÃO PERCA ESTA OPORTUNIDADE ÚNICA!</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 30px;">Descubra a verdade que ninguém teve coragem de contar</p>
+            <div class="price-box">APENAS R$ 19,90</div>
+            <a href="#" class="btn" id="final-buy-button">COMPRAR EBOOK AGORA!</a>
+            <p style="margin-top: 20px; font-size: 0.9rem;">⚠️ Atenção: Esta oferta pode ser retirada a qualquer momento</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 - Nos Bastidores de Hytalo Santos - Todos os direitos reservados</p>
+            <p>Este produto é digital e será entregue imediatamente após a confirmação do pagamento</p>
+            <p>Contato: contato@bastidoreshytalo.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Buy button functionality (to be replaced with Kiwify link)
+        document.getElementById('buy-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Você será redirecionado para a página de checkout da Kiwify!');
+            // In production: window.location.href = 'SEU_LINK_KIWIFY_AQUI';
+        });
+        
+        document.getElementById('final-buy-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Você será redirecionado para a página de checkout da Kiwify!');
+            // In production: window.location.href = 'SEU_LINK_KIWIFY_AQUI';
+        });
+        
+        // Countdown timer (optional)
+        // This can be added to create urgency
+    </script>
+</body>
+</html>
