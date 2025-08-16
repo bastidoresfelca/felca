@@ -309,41 +309,7 @@
         }
     </style>
 </head>
-     <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src='https://connect.facebook.net/en_US/fbevents.js';
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script');
-
-    fbq('init', '1885387632020877'); // substitua pelo seu ID
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1885387632020877&ev=PageView&noscript=1"/>
-  </noscript>
-</head>
-<body>
-
-  <h1>Obrigado pela compra!</h1>
-  <p>Seu pedido foi confirmado com sucesso.</p>
-  <button class="btn-comprar" onclick="registrarCompra()">Registrar Compra</button>
-
-  <!-- JS embutido -->
-  <script>
-    function registrarCompra() {
-      fbq('track', 'Purchase', {
-        value: 19.90, // valor da compra
-        currency: 'BRL'
-      });
-      alert("Compra registrada no Pixel!");
-    }
-  </script>
+    
 <body>
     <!-- Header with Hero Section -->
     <header>
@@ -503,6 +469,7 @@
     </script>
 </body>
 </html>
+
 
 
 
